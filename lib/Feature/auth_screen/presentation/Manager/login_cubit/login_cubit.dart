@@ -9,8 +9,8 @@ class LoginCubit extends Cubit<LoginState> {
 
   static get(context) => BlocProvider.of(context);
   AuthUseCase authUseCase;
-  var passwordController = TextEditingController(text:"ASDasd@123");
-  var emailController = TextEditingController(text: "solom6112002@gmail.com");
+  var passwordController = TextEditingController();
+  var emailController = TextEditingController();
    GlobalKey<FormState> formLoginKey = GlobalKey<FormState>();
   bool obscurePassword = false;
 
